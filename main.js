@@ -1,37 +1,48 @@
-var button1 = document.getElementById('btn1');
+var programingLanguages = ['java script ', 'PHP', 'python']
+console.log(programingLanguages);
 
-// button1.onclick = function(){
-// 	alert('hello');
-// }
-
-var firstButton = document.querySelector('button');
-
-firstButton.onclick = function(){
-	alert('Erela');
-}
+console.log(programingLanguages[0]);
 
 
-button1.addEventListener('click',function(){
-	alert('hello from shkolla digjitale')
-});
+programingLanguages.push('java');/*Shton element në fund të array-t*/
+console.log(programingLanguages);
 
-button1.addEventListener('click',function(){
-	console.log("hello hello")
-});
+programingLanguages.pop();/*Heq elementin e fundit*/
+console.log(programingLanguages);
+
+programingLanguages.unshift("c#");/*Shton element në fillim*/
+console.log(programingLanguages);
+
+programingLanguages.shift();/*Heq elementin e parë*/
+console.log(programingLanguages);
+
+programingLanguages.splice(0,2, 'Ruby');
+console.log(programingLanguages);
 
 
-var button2 = document.getElementById('btn2');
-var button3 = document.getElementById('btn3');
-var button4 = document.getElementById('btn4');
+//--------------------------------------------
+console.log(Math.random()*5);
+console.log(Math.floor(Math.random())*5);
+//--------------------------------------------
 
-button2.onmouseover = function(){
-	alert('hello');
-}
+var students = ['Olti','Larti'];
 
-button3.onmouseleave = function(){
-	alert('hello');
-}
+var [s1,s2] = students;
 
-button4.onmousewheel = function(){
-	alert('hello');
-}
+console.log(s1);
+console.log(s2);
+
+var places = ['london', 'paris','new york', 'berlin'];
+var[firstplaces, ,secondsplace]=places;
+console.log(secondsplace);
+
+var numbers = [1,2,3,4,5,6,7,8,9,10];
+
+var [first,second,...o0thernumbers] = numbers;
+console.log(first);
+console.log(second);
+console.log(o0thernumbers.toString())
+
+
+
+
